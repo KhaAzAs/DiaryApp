@@ -1,49 +1,91 @@
 [versions]
-#agp = "8.3.1"
-#coreSplashscreen = "1.0.1"
-#firebaseBom = "32.8.0"
-#kotlin = "1.9.0"
-#coreKtx = "1.12.0"
-#junit = "4.13.2"
-#junitVersion = "1.1.5"
-#espressoCore = "3.5.1"
-#kotlinxCoroutinesCore = "1.7.3"
-#librarySync = "1.11.0"
-#lifecycleRuntimeKtx = "2.7.0"
-#activityCompose = "1.8.2"
-#composeBom = "2024.03.00"
-#navigationCompose = "2.7.7"
-#navigationRuntimeKtx = "2.7.7"
-#onetapcompose = "1.0.12"
+coreSplashscreen = "1.0.1"
+hiltNavigationCompose = "1.0.0"
+core = "1.0.2"
+messagebarcompose = "1.0.5"
+onetapcompose = "1.0.7"
+junitVersion = "1.1.5"
+ui = "1.4.6"
+uiTestJunit4 = "1.5.1"
+activityCompose = "1.7.2"
+kotlinxCoroutinesCore = "1.7.1"
+kotlin = "1.8.20"
+ksp = "1.8.20-1.0.11"
+librarySync = "1.11.0"
+coreKtx = "1.12.0"
+desugar_jdk_libs = "2.0.3"
+coilCompose = "2.3.0"
+roomRuntime = "2.5.2"
+lifecycleRuntimeKtx = "2.6.2"
+navigationCompose = "2.7.3"
+navigationRuntimeKtx = "2.7.7"
+hilt = "2.48"
+espressoCore = "3.5.1"
+googleServices = "4.3.15"
+junit = "4.13.2"
+agp = "8.1.1"
+firebaseStorageKtx = "20.2.1"
+firebaseAuthKtx = "22.1.2"
+composeBom = "2024.03.00"
 
 [libraries]
-#androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-#androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
-#androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
-#androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
-#firebasebom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
-#firebase-auth = { module = "com.google.firebase:firebase-auth" }
-#firebase-storage = { module = "com.google.firebase:firebase-storage" }
-#junit = { group = "junit", name = "junit", version.ref = "junit" }
-#androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-#androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-#androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-#androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-#androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-#androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-#androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-#androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-#androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-#androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-#androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-#androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-#androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
-#kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
-#library-sync = { module = "io.realm.kotlin:library-sync", version.ref = "librarySync" }
-#onetapcompose = { module = "com.github.stevdza-san:OneTapCompose", version.ref = "onetapcompose" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "uiTestJunit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "ui" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "ui" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplashscreen" }
+
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+
+desugar_jdk_libs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "desugar_jdk_libs" }
+
+messagebarcompose = { group = "com.github.stevdza-san", name = "MessageBarCompose", version.ref = "messagebarcompose" }
+onetapcompose = { group = "com.github.stevdza-san", name = "OneTapCompose", version.ref = "onetapcompose" }
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
+
+calendar = { group = "com.maxkeppeler.sheets-compose-dialogs", name = "calendar", version.ref = "core" }
+clock = { group = "com.maxkeppeler.sheets-compose-dialogs", name = "clock", version.ref = "core" }
+core = { group = "com.maxkeppeler.sheets-compose-dialogs", name = "core", version.ref = "core" }
+
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilCompose" }
+library-sync = { group = "io.realm.kotlin", name = "library-sync", version.ref = "librarySync" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-core = { group  = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
 
 [plugins]
-#androidApplication = { id = "com.android.application", version.ref = "agp" }
-#androidLibrary = { id = "com.android.library", version.ref = "agp" }
-#jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+realmKotlin = { id = "io.realm.kotlin", version.ref = "librarySync" }
+googleDaggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+googleGmsGoogleservices = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+googleDevtoolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
