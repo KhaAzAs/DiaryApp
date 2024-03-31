@@ -1,4 +1,4 @@
-package one.khaz.diaryapp.presentation.screens
+package one.khaz.diaryapp.presentation.screens.auth
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
